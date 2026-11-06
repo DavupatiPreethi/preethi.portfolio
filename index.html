@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Davupati Preethi – Software Developer</title>
+<meta name="description" content="Portfolio of Davupati Preethi, Computer Science (AIML) student and software developer.">
+<meta property="og:title" content="Davupati Preethi – Software Developer">
+<meta property="og:description" content="Java, Spring Boot, React and generative AI projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f8;--surface:#fff;--ink:#14213d;--muted:#51607a;--line:#d5deec;--accent:#0b7f86;--accent-ink:#fff;--gold:#e8a33d;--code:#14213d;--code-ink:#dbe6ff;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1626;--surface:#172138;--ink:#e8eefc;--muted:#9fb0cf;--line:#26324f;--accent:#4fd1c5;--accent-ink:#0f1626;--gold:#f2b95a;--code:#0a101d;--code-ink:#cfe0ff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1626;--surface:#172138;--ink:#e8eefc;--muted:#9fb0cf;--line:#26324f;--accent:#4fd1c5;--accent-ink:#0f1626;--gold:#f2b95a;--code:#0a101d;--code-ink:#cfe0ff;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px;flex-wrap:wrap}
+nav b{font:800 20px "Bricolage Grotesque",sans-serif}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:56px 0 72px}
+h1{font:800 clamp(2.6rem,6vw,4.6rem)/1.02 "Bricolage Grotesque",sans-serif;margin:0 0 20px;letter-spacing:-.02em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--accent-ink)}
+.btn.s{color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+button.btn{background:transparent;font:inherit;font-weight:700;cursor:pointer}
+.api{background:var(--code);color:var(--code-ink);border-radius:14px;padding:20px 22px;font:400 14px/1.7 "JetBrains Mono",ui-monospace,monospace;overflow-x:auto;box-shadow:0 18px 40px -22px rgba(20,33,61,.6)}
+.api .bar{color:var(--gold);margin-bottom:8px}
+.api .k{color:#7fd6cf}.api .s{color:#f2c77a}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.8rem,3.4vw,2.4rem)/1.15 "Bricolage Grotesque",sans-serif;margin:0 0 28px;letter-spacing:-.01em}
+h3{font:700 1.3rem/1.25 "Bricolage Grotesque",sans-serif;margin:0 0 8px}
+.about{max-width:42em;color:var(--muted);font-size:1.08rem}
+.stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:28px}
+.stats div{font-weight:700;font-size:1.5rem;font-family:"Bricolage Grotesque",sans-serif}
+.stats span{display:block;font:400 .9rem "DM Sans",sans-serif;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column}
+.proj:first-child{border-top:5px solid var(--accent)}
+.proj p{color:var(--muted);margin:0 0 14px}
+.proj ul{margin:0 0 18px;padding-left:20px;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:auto 0 18px;padding:0;list-style:none}
+.tags li{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:.85rem}
+.proj a.link{font-weight:700;color:var(--accent);text-decoration:none}
+.proj a.link:hover{text-decoration:underline}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+.item{margin-bottom:22px}
+.item small{color:var(--muted)}
+.item p{margin:4px 0 0;color:var(--muted)}
+.skills dt{font-weight:700;margin-top:14px}
+.skills dd{margin:2px 0 0;color:var(--muted)}
+.certs{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.certs li{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:10px;padding:14px 18px}
+.certs small{display:block;color:var(--muted)}
+.contact{text-align:left}
+.contact .big{font:700 clamp(1.3rem,3vw,2rem) "Bricolage Grotesque",sans-serif;word-break:break-word}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:780px){.hero,.projects,.cols{grid-template-columns:1fr}.hero{padding-top:28px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+.card{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:18px;padding:30px;box-shadow:0 18px 40px -26px rgba(20,33,61,.5)}
+.mono{width:72px;height:72px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font:800 1.7rem "Bricolage Grotesque",sans-serif;margin-bottom:16px}
+.cn{font:800 1.5rem "Bricolage Grotesque",sans-serif}
+.cs{margin:2px 0 18px;color:var(--muted)}
+.facts{margin:0}.facts div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--line)}
+.facts dt{color:var(--muted)}.facts dd{margin:0;font-weight:700;text-align:right}
+.card .tags{margin:18px 0 0}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><b>Preethi D.</b>
+<ul><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+
+<header class="hero">
+<div>
+<h1>Davupati Preethi</h1>
+<p class="lead">Computer Science (AIML) student who builds secure, scalable full-stack apps with Java, Spring Boot and React. I enjoy turning ideas into reliable products, from REST APIs and databases to AI-powered features.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn s" href="Davupati_Preethi_Resume.pdf" download>Download resume</a><a class="btn s" href="#contact">Contact me</a></div>
+</div>
+<aside class="card" aria-label="Profile summary">
+<div class="mono" aria-hidden="true">DP</div>
+<div class="cn">Davupati Preethi</div>
+<p class="cs">B.Tech Computer Science (AIML), SR University</p>
+<dl class="facts"><div><dt>CGPA</dt><dd>8.95 / 10</dd></div><div><dt>Based in</dt><dd>Warangal, India</dd></div></dl>
+<ul class="tags"><li>Java</li><li>Spring Boot</li><li>React</li><li>PostgreSQL</li><li>Python</li></ul>
+</aside>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<p class="about">I’m a third-year B.Tech student at SR University, Warangal. I enjoy backend work such as REST APIs, authentication and databases, and I pair it with React frontends and generative AI features. Every project below is on my GitHub.</p>
+<div class="stats"><div>8.95<span>CGPA at SR University</span></div><div>4<span>featured projects</span></div><div>3<span>cloud and AI certifications</span></div></div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<article class="proj"><h3>Banking Management System</h3>
+<ul><li>Secure full-stack banking app with JWT authentication and password hashing.</li><li>REST APIs for accounts, transactions and fund transfers.</li><li>Search, filtering, pagination and CSV export on PostgreSQL via JPA/Hibernate.</li></ul>
+<ul class="tags"><li>Spring Boot</li><li>React</li><li>PostgreSQL</li></ul>
+<a class="link" target="_blank" rel="noopener" href="https://github.com/DavupatiPreethi/banking-management-system">View on GitHub</a></article>
+
+<article class="proj"><h3>PrepSphere: AI Mock Interviews</h3>
+<ul><li>Company-specific question generation with Groq LLaMA 3.3-70B.</li><li>Speech-to-text answers, adaptive scoring and personalised feedback.</li><li>Webcam-based confidence tracking, with Firebase Authentication and Firestore.</li></ul>
+<ul class="tags"><li>Generative AI</li><li>JavaScript</li><li>Firebase</li></ul>
+<a class="link" target="_blank" rel="noopener" href="https://github.com/DavupatiPreethi/PrepSphere">View on GitHub</a></article>
+
+<article class="proj"><h3>SplitEase: Expense Splitter</h3>
+<ul><li>REST APIs for users, groups, expenses, settlements and balances.</li><li>Automatic balance calculation and settlement tracking.</li><li>Search, filtering and spending analytics with Chart.js.</li></ul>
+<ul class="tags"><li>Node.js</li><li>Express.js</li><li>NeDB</li></ul>
+<a class="link" target="_blank" rel="noopener" href="https://github.com/DavupatiPreethi/splitease-website">View on GitHub</a></article>
+
+<article class="proj"><h3>AI Stress Detection</h3>
+<p>A machine learning project on detecting stress with AI, built in a Jupyter Notebook.</p>
+<ul class="tags"><li>Python</li><li>Machine Learning</li><li>Jupyter</li></ul>
+<a class="link" target="_blank" rel="noopener" href="https://github.com/DavupatiPreethi/AI-Stress-Detection">View on GitHub</a></article>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience and education</h2>
+<div class="cols">
+<div>
+<div class="item"><h3>Java Virtual Internship</h3><small>AICTE, Jan 2026 to Mar 2026</small><p>Practised Core Java, OOP, Collections and exception handling through projects and assignments.</p></div>
+<div class="item"><h3>Google AI-ML Virtual Internship</h3><small>AICTE, Jul 2024 to Sep 2024</small><p>Ten weeks of machine learning fundamentals, predictive modelling, data analysis and model evaluation.</p></div>
+</div>
+<div>
+<div class="item"><h3>B.Tech, Computer Science (AIML)</h3><small>SR University, Warangal, 2023 to 2027</small><p>CGPA 8.95 / 10</p></div>
+<div class="item"><h3>Intermediate</h3><small>New Vision Junior College, Khammam, 2021 to 2023</small><p>97.6%</p></div>
+<div class="item"><h3>School</h3><small>St. Francis School, Madhira, 2021</small><p>GPA 10</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical skills</h2>
+<dl class="skills cols">
+<div><dt>Languages</dt><dd>Java, Python, SQL</dd><dt>Backend</dt><dd>Spring Boot, REST APIs, Node.js, Express.js</dd><dt>Frontend</dt><dd>React, HTML, CSS, JavaScript</dd><dt>Databases</dt><dd>PostgreSQL, MySQL</dd></div>
+<div><dt>Core CS</dt><dd>Data Structures and Algorithms, OOP, DBMS, Operating Systems, Computer Networks, System Design</dd><dt>AI/ML</dt><dd>Machine Learning, Generative AI, scikit-learn, Pandas, NumPy</dd><dt>Practices and tools</dt><dd>Agile, Scrum, Testing, Debugging, Git, GitHub, Postman</dd></div>
+</dl>
+</section>
+
+<section id="certs">
+<h2>Certifications</h2>
+<ul class="certs">
+<li><b>Microsoft Certified: Azure AI Fundamentals</b><small>August 2025</small></li>
+<li><b>Google Cloud Generative AI Leader Track</b><small>November 2025</small></li>
+<li><b>AWS Academy Cloud Computing</b><small>November 2025</small></li>
+</ul>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let’s talk</h2>
+<p class="about">I’m open to new opportunities and conversations. The fastest way to reach me is email.</p>
+<p class="big" id="em">preethidavupatii@gmail.com</p>
+<div class="btns" style="margin-top:18px">
+<button class="btn p" id="cp" type="button">Copy email</button>
+<a class="btn s" href="Davupati_Preethi_Resume.pdf" download>Download resume</a>
+<a class="btn s" target="_blank" rel="noopener" href="https://www.linkedin.com/in/davupati-preethi/">LinkedIn</a>
+<a class="btn s" target="_blank" rel="noopener" href="https://github.com/DavupatiPreethi">GitHub</a>
+</div>
+<p class="about" style="margin-top:16px">Phone: +91 93928 41326</p>
+</section>
+</div>
+<footer><div class="wrap">© 2026 Davupati Preethi</div></footer>
+<script>
+var cp=document.getElementById('cp'),em=document.getElementById('em');
+cp.addEventListener('click',function(){
+  var done=function(){cp.textContent='Copied!';setTimeout(function(){cp.textContent='Copy email'},2000)};
+  var fallback=function(){var r=document.createRange();r.selectNodeContents(em);var s=getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand('copy');done()}catch(e){cp.textContent='Select the email above'}};
+  try{navigator.clipboard.writeText('preethidavupatii@gmail.com').then(done,fallback)}catch(e){fallback()}
+});
+</script>
+</body>
+</html>
